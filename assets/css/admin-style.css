@@ -1,0 +1,187 @@
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 100000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: 5% auto;
+  padding: 20px;
+  width: 80%;
+  max-width: 600px;
+  border-radius: 4px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.edit-invoice,
+.delete-invoice {
+  margin: 0 5px;
+}
+
+.invoices-table th.sortable {
+  padding-left: 8px;
+}
+
+.invoices-table th.sortable.sort-desc {
+  font-weight: bold;
+}
+
+.invoices-table th.sortable.sort-asc {
+  font-weight: bold;
+}
+
+.cdg-th {
+  display: none;
+}
+.card {
+  width: 80vw;
+  max-width: 1920px;
+  margin: 20px 0;
+}
+
+.late-fee-rule {
+  background: #fff;
+  border: 1px solid #ccd0d4;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.late-fee-rule h4 {
+  margin-top: 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.remove-rule {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #dc3232 !important;
+}
+
+.max-amount-row {
+  display: none;
+}
+
+.remove-rule {
+  margin-top: 10px !important;
+  color: #dc3232 !important;
+}
+
+.fee-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.add-rule {
+  margin: 0 !important;
+}
+
+#late_fee_enabled {
+  margin: 0 8px 0 0;
+}
+
+.enable-fees-row {
+  display: flex;
+  align-items: center;
+}
+
+.amount-type {
+  margin-left: 5px;
+  font-weight: 500;
+}
+
+.form-table td {
+  padding: 10px 10px;
+}
+
+.description {
+  font-style: italic;
+  color: #666;
+  margin: 2px 0 5px;
+  font-size: 13px;
+}
+
+#invoice-frequency {
+  width: 200px;
+}
+
+.recurring-settings.visible {
+  display: table-row;
+}
+
+.form-table td select {
+  vertical-align: middle;
+}
+
+.recurring-settings .description {
+  margin-top: 5px;
+  color: #666;
+}
+
+/* Style the number input and unit select when they're next to each other */
+.recurring-settings input[type="number"] {
+  margin-right: 8px;
+}
+
+.recurring-settings select {
+  min-width: 120px;
+}
+
+/* Status Legend */
+.status-legend {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4px 0;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 13px;
+  color: #50575e;
+  border-bottom: 1px dotted #999;
+}
+
+.legend-dot {
+  display: inline-block !important;
+  width: 10px !important;
+  height: 10px !important;
+  min-width: 10px;
+  min-height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+/* Status tooltip */
+.has-tooltip {
+  cursor: help;
+  border-bottom: 1px dotted currentColor;
+}
+
+.cis-tooltip {
+  position: fixed;
+  background: #1d2327;
+  color: #fff;
+  padding: 6px 10px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: normal;
+  white-space: nowrap;
+  z-index: 100000;
+  pointer-events: none;
+}
