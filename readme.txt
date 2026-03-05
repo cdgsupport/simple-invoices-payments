@@ -1,5 +1,6 @@
-=== Custom Invoice System ===
-Contributors: yourname
+# Custom Invoice System
+
+Contributors: Crawford Design Group
 Requires at least: 5.0
 Tested up to: 6.4
 Requires PHP: 7.4
